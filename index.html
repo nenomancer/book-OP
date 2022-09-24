@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
-</head>
-<body>
-    <h1>Nens' Books</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <script type="module" defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <button data-new-book-form>Add Book</button>
+    <ul class="booklist" data-booklist>
+      <li class="booklist__book"></li>
+    </ul>
+    <form action="/" class="new-book">
+      <div class="new-book__input-container">
+        <label for="author" class="label">Author</label>
+        <input type="text" id="author" name="author" class="input" />
+      </div>
+      <div class="new-book__input-container">
+        <label for="title" class="label">Title</label>
+        <input type="text" id="title" name="title" class="input" />
+      </div>
+      <div class="new-book__input-container">
+        <label for="total-pages" class="label">Pages</label>
+        <input
+          type="number"
+          id="total-pages"
+          name="total-pages"
+          min="30"
+          value="150"
+          max="6000"
+          class="input"
+        />
+      </div>
+      <div class="new-book__input-container">
+        <label for="is-read" class="label">I've read it</label>
+        <input type="checkbox" id="is-read" name="is-read" class="input" />
+      </div>
+      <div class="new-book__input-container">
+        <button class="button add" data-add-book>Add Book</button>
+        <button type="button" class="button clear">Clear</button>
+      </div>
+    </form>
+  </body>
 </html>
