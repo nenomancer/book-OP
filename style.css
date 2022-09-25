@@ -4,6 +4,35 @@
     box-sizing: border-box;
 }
 
+.table {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.table__header {
+    background-color: #eee;
+}
+
+.table__body {
+}
+
+.table__row {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr) 3fr 2fr;
+}
+
+.table__header .table__row {
+    border-bottom: 1px solid blue;
+}
+
+.table__body .table__row:nth-child(odd) {
+    background-color: #eee;
+}
+
+.table__cell {
+    padding: 1rem .5rem;
+}
+
 .booklist {
     background-color: red;
 }

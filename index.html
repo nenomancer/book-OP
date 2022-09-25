@@ -11,10 +11,38 @@
   <body>
     <h1>My Library</h1>
     <button data-new-book-form>Add Book</button>
-    <ul class="booklist" data-booklist>
-      <li class="booklist__book"></li>
-    </ul>
-    <form action="/" class="new-book">
+    <div class="table">
+      <div class="table__header">
+        <div class="table__row">
+          <div class="table__cell">Title</div>
+          <div class="table__cell">Author</div>
+          <div class="table__cell">Pages</div>
+          <div class="table__cell">Is Read</div>
+        </div>
+      </div>
+      <div class="table__body">
+        <div class="table__row">
+          <div class="table__cell">The Hobbit</div>
+          <div class="table__cell">J.R.R. Tolkien</div>
+          <div class="table__cell">295</div>
+          <div class="table__cell">non</div>
+        </div>
+        <div class="table__row">
+          <div class="table__cell">The Hobbit</div>
+          <div class="table__cell">J.R.R. Tolkien</div>
+          <div class="table__cell">295</div>
+          <div class="table__cell">non</div>
+        </div>
+        <div class="table__row">
+          <div class="table__cell">The Hobbit</div>
+          <div class="table__cell">J.R.R. Tolkien</div>
+          <div class="table__cell">295</div>
+          <div class="table__cell">non</div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- <form action="/" class="new-book">
       <div class="new-book__input-container">
         <label for="author" class="label">Author</label>
         <input type="text" id="author" name="author" class="input" />
@@ -43,6 +71,6 @@
         <button class="button add" data-add-book>Add Book</button>
         <button type="button" class="button clear">Clear</button>
       </div>
-    </form>
+    </form> -->
   </body>
 </html>
